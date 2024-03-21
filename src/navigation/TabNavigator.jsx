@@ -2,15 +2,25 @@ import React from 'react';
 import {Dimensions, View, StyleSheet, Platform} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import CommnityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {
   HomeIcon,
   ClockIcon,
   QrCodeIcon,
   BellAlertIcon,
   UserIcon,
+  AcademicCapIcon,
+  IdentificationIcon,
+  Bars3Icon,
+  BuildingOffice2Icon,
 } from 'react-native-heroicons/outline';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+
 import HomeScreen from '../screens/HomeScreen';
+import DepartmentScreen from '../screens/DepartmentScreen';
+import CourseScreen from '../screens/CourseScreen';
+import PersonnalScreen from '../screens/PersonnalScreen';
+import MenuScreen from '../screens/MenuScreen';
 // import HistoryScreen from '../screens/HistoryScreen';
 // import NotificationScreen from '../screens/NotificationScreen';
 // import AccountScreen from '../screens/AccountScreen';
@@ -38,7 +48,7 @@ const TabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={route => ({
-        tabBarActiveTintColor: '#F37234',
+        tabBarActiveTintColor: '#20A5DE',
         tabBarInactiveTintColor: '#000000',
         tabBarStyle: {
           backgroundColor: '#FFF',
@@ -52,12 +62,63 @@ const TabNavigator = () => {
         },
       })}>
       <Tab.Screen
-        name="hometab"
+        name="Department"
+        component={DepartmentScreen}
+        options={{
+          tabBarLabel: 'ภาควิชา',
+          headerShown: false,
+          tabBarIcon: ({color, size}) => (
+            <BuildingOffice2Icon color={color} size={size} />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Course"
+        component={CourseScreen}
+        options={{
+          tabBarLabel: 'หลักสูตร',
+          headerShown: false,
+          tabBarIcon: ({color, size}) => (
+            <AcademicCapIcon color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Home"
         component={HomeStack}
         options={{
-          tabBarLabel: 'หน้าหลัก',
+          tabBarLabel: 'Home',
           headerShown: false,
-          tabBarIcon: ({color, size}) => <HomeIcon color={color} size={size} />,
+          tabBarIcon: ({color, size}) => (
+            <View style={style.radius_out}>
+              <View style={style.radius_in}>
+                <HomeIcon name="scan1" color="#FFF" size={size} />
+              </View>
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Personal"
+        component={PersonnalScreen}
+        options={{
+          tabBarLabel: 'บุคลากร',
+          headerShown: false,
+          tabBarIcon: ({color, size}) => (
+            <IdentificationIcon color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Menu"
+        component={MenuScreen}
+        options={{
+          tabBarLabel: 'เมนู',
+          headerShown: false,
+          tabBarIcon: ({color, size}) => (
+            <Bars3Icon color={color} size={size} />
+          ),
         }}
       />
       {/* <Tab.Screen
@@ -81,21 +142,7 @@ const TabNavigator = () => {
           ),
         }}
       /> */}
-      {/* <Tab.Screen
-        name="scan"
-        component={ScanQrScreen}
-        options={{
-          tabBarLabel: 'ScanQR',
-          headerShown: false,
-          tabBarIcon: ({color, size}) => (
-            <View style={style.radius_out}>
-              <View style={style.radius_in}>
-                <AntDesign name="scan1" color="#FFF" size={size} />
-              </View>
-            </View>
-          ),
-        }}
-      /> */}
+
       {/* <Tab.Screen
         name="notification"
         component={NotificationScreen}
@@ -128,7 +175,7 @@ export default TabNavigator;
 
 const style = StyleSheet.create({
   radius_in: {
-    backgroundColor: '#F37234',
+    backgroundColor: '#20A5DE',
     width: 50,
     height: 50,
     borderRadius: 35,

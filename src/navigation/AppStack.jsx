@@ -31,11 +31,15 @@ const AppStack = () => {
           headerShown: false,
         })}>
         <Stack.Screen name="Home" component={TabNavigator} />
-        <Stack.Group
+        <Stack.Screen name="Department" component={TabNavigator} />
+        <Stack.Screen name="Menu" component={TabNavigator} />
+        <Stack.Screen name="Course" component={TabNavigator} />
+        <Stack.Screen name="Personal" component={TabNavigator} />
+        {/* <Stack.Group
           screenOptions={() => ({
             // presentation: 'modal',
             headerShown: true,
-          })}></Stack.Group>
+          })}></Stack.Group> */}
       </Stack.Navigator>
     </>
   );
