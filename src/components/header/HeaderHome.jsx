@@ -7,17 +7,38 @@ const {width} = Dimensions.get('window');
 export const HeaderHome = () => {
   return (
     <>
-      <View className="flex-col justify-center items-center">
-        <Image
-          resizeMode="contain"
-          style={{
-            width: width * 0.5,
-            height: 38,
-            overflow: 'visible',
-          }}
-          source={commonImages.logoFITM}
-        />
-        <Text className="text-gray_new text-lg">Header</Text>
+      <View className="flex flex-row w-full h-20 bg-blue">
+        <View className="bg-yellow">
+          <Image
+            className="w-20"
+            resizeMode="fit"
+            style={{
+              width: width / 3,
+              height: 85,
+              margin: 'left',
+              // overflow: 'visible',
+            }}
+            source={commonImages.logoFITMWhite}
+          />
+        </View>
+        <View className="justify-center">
+          <Text
+            className="text-white "
+            style={{
+              fontFamily: 'Kanit-Bold',
+              fontSize: 11,
+            }}>
+            คณะเทคโนโลยีและการจัดการอุตสาหกรรม
+          </Text>
+          <Text
+            className="text-white "
+            style={{
+              fontFamily: 'Kanit',
+              fontSize: 9,
+            }}>
+            Faculty of Industrial Technology and Management
+          </Text>
+        </View>
       </View>
     </>
   );
