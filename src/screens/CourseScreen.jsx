@@ -5,7 +5,15 @@ export class CourseScreen extends Component {
   render() {
     return (
       <View>
-        <Text>CourseScreen</Text>
+        <View>
+          <View className=" flex flex-row justify-evenly">
+            <Text
+              className=" text-5xl text-white rounded-md  p-5 "
+              style={{fontFamily: 'Kanit-Mediu'}}>
+              ITI
+            </Text>
+          </View>
+        </View>
       </View>
     );
   }
