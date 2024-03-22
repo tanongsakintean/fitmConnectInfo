@@ -47,6 +47,7 @@ const HomeStack = () => {
 const TabNavigator = () => {
   return (
     <Tab.Navigator
+      initialRouteName="Home"
       screenOptions={route => ({
         tabBarActiveTintColor: '#20A5DE',
         tabBarInactiveTintColor: '#000000',
