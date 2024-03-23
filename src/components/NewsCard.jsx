@@ -12,9 +12,9 @@ export const NewsCard = ({news}) => {
       <View className="mr-4 relative">
         <View className="">
           <Image
-            resizeMode="fit"
+            resizeMode="contain"
             source={news.image}
-            className="w-56 h-28 rounded-t-3xl"
+            className="w-56 h-28 bg-white rounded-t-3xl"
           />
         </View>
         <View className="w-56 bg-white rounded-b-xl h-20 flex  flex-col justify-around">
