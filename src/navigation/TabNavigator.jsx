@@ -69,13 +69,30 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Department"
         component={DepartmentScreen}
-        options={{
+        options={({navigation}) => ({
           tabBarLabel: 'ภาควิชา',
-          headerShown: false,
+          headerShown: true,
+          headerTitle: 'ภาควิชา',
+          headerTintColor: '#fff',
+          headerStyle: {
+            backgroundColor: '#336ac6',
+          },
+          headerTitleStyle: {
+            fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+            fontSize: 15,
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: 200,
+          },
           tabBarIcon: ({color, size}) => (
-            <BuildingOffice2Icon color={color} size={size} />
+            <AcademicCapIcon color={color} size={size} />
           ),
-        }}
+          headerLeft: ({}) => (
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+              <ArrowLeftIcon style={{marginLeft: 10}} color="#fff" size="23" />
+            </TouchableOpacity>
+          ),
+        })}
       />
 
       <Tab.Screen
@@ -87,7 +104,14 @@ const TabNavigator = () => {
           headerTitle: 'หลักสูตร',
           headerTintColor: '#fff',
           headerStyle: {
-            backgroundColor: '#6495ED',
+            backgroundColor: '#20A5DE',
+          },
+          headerTitleStyle: {
+            fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+            fontSize: 15,
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: 200,
           },
           tabBarIcon: ({color, size}) => (
             <AcademicCapIcon color={color} size={size} />
@@ -121,7 +145,7 @@ const TabNavigator = () => {
             backgroundColor: '#6495ED',
           },
           headerTitleStyle: {
-            fontFamily: 'Kanit-Medium',
+            fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
             fontSize: 15,
             fontWeight: 'bold',
             textAlign: 'center',

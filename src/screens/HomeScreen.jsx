@@ -6,57 +6,24 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import React, {useState} from 'react';
 import HeaderHome from '../components/header/HeaderHome';
 import {SwiperFlatList} from 'react-native-swiper-flatlist';
 import {commonImages} from '../constant/images';
 import {NewsCard} from '../components/NewsCard';
-
-const categories = [
-  'ข่าวประชาสัมพันธ์',
-  'ข่าวทุนวิจัย/อบรม',
-  'ข่าวจัดซื้อจัดจ้าง',
-  'ข่าววิชาการ',
-];
-const featured = [
-  {
-    id: 1,
-    title: 'Zooba',
-    image: require('../assets/img/gys.jpg'),
-    downloads: '200k',
-    stars: 4,
-  },
-  {
-    id: 2,
-    title: 'Subway Surfer',
-    image: require('../assets/img/tcas67_1.jpg'),
-    downloads: '5M',
-    stars: 4,
-  },
-  {
-    id: 3,
-    title: 'Free Fire',
-    image: require('../assets/img/tcas67_1.jpg'),
-    downloads: '100M',
-    stars: 3,
-  },
-  {
-    id: 4,
-    title: "Alto's Adventure",
-    image: require('../assets/img/tcas67_1.jpg'),
-    downloads: '20k',
-    stars: 4,
-  },
-];
+import {NewspaperIcon} from 'react-native-heroicons/solid';
+import {FeedNews} from '../data/FeedNews';
+import {Categories} from '../data/Categories';
 
 const HomeScreen = () => {
-  const [activeCategory, setActiveCategory] = useState('Action');
+  const [activeCategory, setActiveCategory] = useState('ทั้งหมด');
   return (
     <>
       <HeaderHome />
       <ScrollView>
-        <View style={styles.container} className="m-3 bg-red-500">
+        <View style={styles.container} className="m-3 mb-0">
           <SwiperFlatList
             autoplay
             autoplayDelay={2}
@@ -66,21 +33,21 @@ const HomeScreen = () => {
             showPagination>
             <View>
               <Image
-                resizeMode="fit"
+                resizeMode="contain"
                 style={styles.image}
                 source={commonImages.slideImg1}
               />
             </View>
             <View>
               <Image
-                resizeMode="fit"
+                resizeMode="contain"
                 style={styles.image}
                 source={commonImages.slideImg2}
               />
             </View>
             <View>
               <Image
-                resizeMode="fit"
+                resizeMode="contain"
                 style={styles.image}
                 source={commonImages.slideImg3}
               />
@@ -89,22 +56,36 @@ const HomeScreen = () => {
         </View>
 
         <View className="mt-3 space-y-2">
-          <Text
-            style={{color: '#29aff0', fontFamily: 'Kanit-Bold', fontSize: 16}}
-            className="ml-3 text-3xl font-bold">
-            Latest news
-          </Text>
+          <View className="flex flex-row">
+            <View className=" justify-center ml-3">
+              <NewspaperIcon color="#336ac6" size={20} />
+            </View>
+            <Text
+              style={{
+                color: '#336ac6',
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+                fontSize: 16,
+              }}
+              className="ml-1 text-3xl font-bold">
+              Latest news
+            </Text>
+          </View>
           <View className="pl-4">
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              {categories.map(cat => {
+              {Categories.map(cat => {
                 if (cat === activeCategory) {
                   return (
                     <TouchableOpacity
                       onPress={() => setActiveCategory(cat)}
                       key={cat}
-                      className="bg-blue p-2.5 px-2 rounded-lg mr-1">
+                      style={{backgroundColor: '#336ac6'}}
+                      className="p-2.5 px-2 rounded-lg mr-2">
                       <Text
-                        style={{fontFamily: 'Kanit-Bold', fontSize: 13}}
+                        style={{
+                          ffontFamily:
+                            Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+                          fontSize: 13,
+                        }}
                         className="text-white">
                         {cat}
                       </Text>
@@ -115,9 +96,12 @@ const HomeScreen = () => {
                     <TouchableOpacity
                       onPress={() => setActiveCategory(cat)}
                       key={cat}
-                      className="bg-stone-200 p-2.5 px-2 rounded-lg mr-1">
+                      className="bg-stone-200 p-2.5 px-2 rounded-lg mr-2">
                       <Text
-                        style={{fontFamily: 'Kanit-Bold', fontSize: 13}}
+                        style={{
+                          fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+                          fontSize: 13,
+                        }}
                         className="text-slate-500">
                         {cat}
                       </Text>
@@ -132,7 +116,7 @@ const HomeScreen = () => {
         <View className="mt-5 space-y-2">
           <View className="pl-4">
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              {featured.map((item, index) => {
+              {FeedNews.map((item, index) => {
                 return <NewsCard key={index} news={item} />;
               })}
             </ScrollView>
