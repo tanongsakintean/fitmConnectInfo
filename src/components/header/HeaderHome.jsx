@@ -1,42 +1,48 @@
 import React from 'react';
-import {Image, Text, View, Dimensions} from 'react-native';
+import {Image, Text, View, Dimensions, Platform} from 'react-native';
 import {commonImages} from '../../constant/images';
 
 const {width} = Dimensions.get('window');
+const {height} = Dimensions.get('window');
 
 export const HeaderHome = () => {
   return (
     <>
-      <View className="flex flex-row w-full h-20 bg-blue">
-        <View className="bg-yellow">
+      <View
+        className="flex flex-row w-full"
+        style={{backgroundColor: '#336ac6'}}>
+        <View
+          className="bg-yellow"
+          style={{height: Platform.OS === 'ios' ? height * 0.15 : 70}}>
           <Image
-            className="w-20"
-            resizeMode="fit"
+            className=""
+            resizeMode="contain"
             style={{
-              width: width / 3,
-              height: 85,
-              margin: 'left',
-              // overflow: 'visible',
+              width: Platform.OS === 'ios' ? width * 0.3 : 70,
+              height: Platform.OS === 'ios' ? height * 0.1 : 86,
+              marginTop: Platform.OS === 'ios' ? 50 : 0,
             }}
-            source={commonImages.logoFITMWhite}
+            source={commonImages.logoITNoBg}
           />
         </View>
-        <View className="justify-center">
+        <View
+          className="justify-center w-full "
+          style={{marginTop: Platform.OS === 'ios' ? 50 : 0}}>
           <Text
-            className="text-white "
+            className="text-white"
             style={{
-              fontFamily: 'Kanit-Bold',
-              fontSize: 11,
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+              fontSize: Platform.OS === 'ios' ? 18 : 13,
             }}>
-            คณะเทคโนโลยีและการจัดการอุตสาหกรรม
+            ภาควิชาเทคโนโลยีสารสนเทศ
           </Text>
           <Text
             className="text-white "
             style={{
               fontFamily: 'Kanit',
-              fontSize: 9,
+              fontSize: Platform.OS === 'ios' ? 14 : 13,
             }}>
-            Faculty of Industrial Technology and Management
+            คณะเทคโนโลยีและการจัดการอุตสาหกรรม
           </Text>
         </View>
       </View>
