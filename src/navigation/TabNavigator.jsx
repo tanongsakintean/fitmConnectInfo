@@ -1,5 +1,11 @@
 import React from 'react';
-import {Dimensions, View, StyleSheet, Platform} from 'react-native';
+import {
+  Dimensions,
+  View,
+  StyleSheet,
+  Platform,
+  TouchableOpacity,
+} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CommnityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -13,6 +19,7 @@ import {
   IdentificationIcon,
   Bars3Icon,
   BuildingOffice2Icon,
+  ArrowLeftIcon,
 } from 'react-native-heroicons/outline';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
@@ -21,11 +28,6 @@ import DepartmentScreen from '../screens/DepartmentScreen';
 import CourseScreen from '../screens/CourseScreen';
 import PersonnalScreen from '../screens/PersonnalScreen';
 import MenuScreen from '../screens/MenuScreen';
-// import HistoryScreen from '../screens/HistoryScreen';
-// import NotificationScreen from '../screens/NotificationScreen';
-// import AccountScreen from '../screens/AccountScreen';
-// import ScanQrScreen from '../screens/ScanQrScreen';
-// import HeaderStack from '../components/HeaderStack';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -77,13 +79,30 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Course"
         component={CourseScreen}
-        options={{
+        options={({navigation}) => ({
           tabBarLabel: 'หลักสูตร',
-          headerShown: false,
+          headerShown: true,
+          headerTitle: 'หลักสูตร',
+          headerTintColor: '#fff',
+          headerStyle: {
+            backgroundColor: '#20A5DE',
+          },
+          headerTitleStyle: {
+            fontFamily: 'Kanit-Medium',
+            fontSize: 15,
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: 200,
+          },
           tabBarIcon: ({color, size}) => (
             <AcademicCapIcon color={color} size={size} />
           ),
-        }}
+          headerLeft: ({}) => (
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+              <ArrowLeftIcon style={{marginLeft: 10}} color="#fff" size="23" />
+            </TouchableOpacity>
+          ),
+        })}
       />
       <Tab.Screen
         name="Home"
@@ -103,13 +122,30 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Personal"
         component={PersonnalScreen}
-        options={{
+        options={({navigation}) => ({
           tabBarLabel: 'บุคลากร',
-          headerShown: false,
+          headerShown: true,
+          headerTitle: 'อาจารย์ในภาควิชา',
+          headerTintColor: '#fff',
+          headerStyle: {
+            backgroundColor: '#20A5DE',
+          },
+          headerTitleStyle: {
+            fontFamily: 'Kanit-Medium',
+            fontSize: 15,
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: 230,
+          },
           tabBarIcon: ({color, size}) => (
             <IdentificationIcon color={color} size={size} />
           ),
-        }}
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+              <ArrowLeftIcon style={{marginLeft: 10}} color="#fff" size="23" />
+            </TouchableOpacity>
+          ),
+        })}
       />
       <Tab.Screen
         name="Menu"
