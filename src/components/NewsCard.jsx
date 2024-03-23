@@ -5,9 +5,9 @@ import {ClockIcon} from 'react-native-heroicons/outline';
 export const NewsCard = ({news}) => {
   return (
     <View className="mr-4 relative">
-      <View className="">
+      <View className=" bg-white py-2">
         <Image
-          resizeMode="fit"
+          resizeMode="contain"
           source={news.image}
           className="w-56 h-28 rounded-t-3xl"
         />

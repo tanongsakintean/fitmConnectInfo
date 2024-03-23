@@ -28,11 +28,13 @@ import DepartmentScreen from '../screens/DepartmentScreen';
 import CourseScreen from '../screens/CourseScreen';
 import PersonnalScreen from '../screens/PersonnalScreen';
 import MenuScreen from '../screens/MenuScreen';
+import CourseItScreen from '../screens/CourseItScreen';
+import CourseStack from './CourseStack';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-const {height} = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
 
 const HomeStack = () => {
   return (
@@ -51,7 +53,7 @@ const TabNavigator = () => {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={route => ({
-        tabBarActiveTintColor: '#20A5DE',
+        tabBarActiveTintColor: '#6495ED',
         tabBarInactiveTintColor: '#000000',
         tabBarStyle: {
           backgroundColor: '#FFF',
@@ -78,29 +80,17 @@ const TabNavigator = () => {
 
       <Tab.Screen
         name="Course"
-        component={CourseScreen}
+        component={CourseStack}
         options={({navigation}) => ({
           tabBarLabel: 'หลักสูตร',
-          headerShown: true,
+          headerShown: false,
           headerTitle: 'หลักสูตร',
           headerTintColor: '#fff',
           headerStyle: {
-            backgroundColor: '#20A5DE',
-          },
-          headerTitleStyle: {
-            fontFamily: 'Kanit-Medium',
-            fontSize: 15,
-            fontWeight: 'bold',
-            textAlign: 'center',
-            width: 200,
+            backgroundColor: '#6495ED',
           },
           tabBarIcon: ({color, size}) => (
             <AcademicCapIcon color={color} size={size} />
-          ),
-          headerLeft: ({}) => (
-            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-              <ArrowLeftIcon style={{marginLeft: 10}} color="#fff" size="23" />
-            </TouchableOpacity>
           ),
         })}
       />
@@ -108,7 +98,7 @@ const TabNavigator = () => {
         name="Home"
         component={HomeStack}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'หน้าหลัก',
           headerShown: false,
           tabBarIcon: ({color, size}) => (
             <View style={style.radius_out}>
@@ -128,14 +118,14 @@ const TabNavigator = () => {
           headerTitle: 'อาจารย์ในภาควิชา',
           headerTintColor: '#fff',
           headerStyle: {
-            backgroundColor: '#20A5DE',
+            backgroundColor: '#6495ED',
           },
           headerTitleStyle: {
             fontFamily: 'Kanit-Medium',
             fontSize: 15,
             fontWeight: 'bold',
             textAlign: 'center',
-            width: 230,
+            width: 260,
           },
           tabBarIcon: ({color, size}) => (
             <IdentificationIcon color={color} size={size} />
@@ -212,7 +202,7 @@ export default TabNavigator;
 
 const style = StyleSheet.create({
   radius_in: {
-    backgroundColor: '#20A5DE',
+    backgroundColor: '#6495ED',
     width: 50,
     height: 50,
     borderRadius: 35,
