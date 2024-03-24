@@ -6,4 +6,5 @@ export const commonImages = {
   slideImg2: require('../assets/img/fitmok.jpg'),
   slideImg3: require('../assets/img/newstd66.jpg'),
   IT: require('../assets/img/IT.jpg'),
+  IT_01: require('../assets/img/IT_01.jpeg'),
 };
