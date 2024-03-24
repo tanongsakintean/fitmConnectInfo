@@ -3,6 +3,7 @@ import {Platform, Text, TouchableOpacity} from 'react-native';
 import {StyleSheet, Dimensions, View} from 'react-native';
 import Pdf from 'react-native-pdf';
 import {ArrowUpIcon} from 'react-native-heroicons/outline';
+import student from './student.pdf';
 
 export default class ItPDF extends React.Component {
   constructor(props) {

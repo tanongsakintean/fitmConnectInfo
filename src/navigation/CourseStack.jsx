@@ -24,6 +24,9 @@ import ItOldPDF from '../pdf/ItOldPDF';
 import ItStationPDF from '../pdf/ItStationPDF';
 import ItManagePDF from '../pdf/ItManagePDF';
 import It62 from '../pdf/It62';
+import InePDF from '../pdf/InePDF';
+import INEStuPDF from '../pdf/INEStuPDF';
+import ITIPDF from '../pdf/ITIPDF';
 
 const Stack = createNativeStackNavigator();
 const {width} = Dimensions.get('window');
@@ -364,6 +367,111 @@ const CourseStack = ({navigation}) => {
             ),
             headerLeft: ({}) => (
               <TouchableOpacity onPress={() => navigation.navigate('ITCourse')}>
+                <ArrowLeftIcon
+                  style={{marginLeft: -5}}
+                  color="#fff"
+                  size="23"
+                />
+              </TouchableOpacity>
+            ),
+          })}
+        />
+
+        <Stack.Screen
+          name="INECoursePDF"
+          component={InePDF}
+          options={({navigation}) => ({
+            tabBarLabel: 'หลักสูตร',
+            headerShown: true,
+            headerTitle: 'หลักสูตร',
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#336ac6',
+            },
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontFamily: 'Kanit-Medium',
+              fontSize: 15,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              width: width,
+            },
+            tabBarIcon: ({color, size}) => (
+              <AcademicCapIcon color={color} size={size} />
+            ),
+            headerLeft: ({}) => (
+              <TouchableOpacity
+                onPress={() => navigation.navigate('INECourse')}>
+                <ArrowLeftIcon
+                  style={{marginLeft: -5}}
+                  color="#fff"
+                  size="23"
+                />
+              </TouchableOpacity>
+            ),
+          })}
+        />
+
+        <Stack.Screen
+          name="INEStuCoursePDF"
+          component={INEStuPDF}
+          options={({navigation}) => ({
+            tabBarLabel: 'หลักสูตร',
+            headerShown: true,
+            headerTitle: 'หลักสูตร',
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#336ac6',
+            },
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontFamily: 'Kanit-Medium',
+              fontSize: 15,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              width: width,
+            },
+            tabBarIcon: ({color, size}) => (
+              <AcademicCapIcon color={color} size={size} />
+            ),
+            headerLeft: ({}) => (
+              <TouchableOpacity
+                onPress={() => navigation.navigate('INECourse')}>
+                <ArrowLeftIcon
+                  style={{marginLeft: -5}}
+                  color="#fff"
+                  size="23"
+                />
+              </TouchableOpacity>
+            ),
+          })}
+        />
+
+        <Stack.Screen
+          name="ITICoursePDF"
+          component={ITIPDF}
+          options={({navigation}) => ({
+            tabBarLabel: 'หลักสูตร',
+            headerShown: true,
+            headerTitle: 'หลักสูตร',
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#336ac6',
+            },
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontFamily: 'Kanit-Medium',
+              fontSize: 15,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              width: width,
+            },
+            tabBarIcon: ({color, size}) => (
+              <AcademicCapIcon color={color} size={size} />
+            ),
+            headerLeft: ({}) => (
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ITICourse')}>
                 <ArrowLeftIcon
                   style={{marginLeft: -5}}
                   color="#fff"

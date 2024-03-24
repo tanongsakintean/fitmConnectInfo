@@ -30,16 +30,16 @@ const CourseItScreen = ({navigation}) => {
         <View>
           <View className=" flex mt-4 flex-row justify-center items-center">
             <Text
-              className=" m-2 text-black  text-2xl"
+              className=" m-2 text-black  text-lg"
               style={{fontFamily: 'Kanit-Medium'}}>
-              ระดับปริญญาตรี 4 ปี (IT)
+              หลักสูตรวิทยาศาสตร์บัณฑิต (วท.บ.)
             </Text>
           </View>
           <View className=" px-2 flex -mt-3 flex-row justify-center items-center">
             <Text
-              className=" text-black text-xs"
+              className=" text-black text-md"
               style={{fontFamily: 'Kanit-Medium'}}>
-              Bachelor of Science Program in Information Technology{' '}
+              สาขาวิชาเทคโนโลยีสารสนเทศ{' '}
             </Text>
           </View>
         </View>
