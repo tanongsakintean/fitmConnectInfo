@@ -11,10 +11,7 @@ export default class ItStationPDF extends React.Component {
     this.BtnRef = React.createRef();
   }
   render() {
-    const source =
-      Platform.os === 'ios'
-        ? require('./ItStation.pdf')
-        : 'bundle-assets://ItStation.pdf';
+    let ItStation = require('./ItStation.pdf');
 
     return (
       <View style={styles.container}>
@@ -22,7 +19,14 @@ export default class ItStationPDF extends React.Component {
           ref={pdf => {
             this.pdf = pdf;
           }}
-          source={{uri: source, cache: true}}
+          source={
+            Platform.OS === 'ios'
+              ? ItStation
+              : {
+                  uri: 'bundle-assets://ItStation.pdf',
+                  cache: true,
+                }
+          }
           onLoadComplete={(numberOfPages, filePath) => {
             console.log(`Number of pages: ${numberOfPages}`);
           }}

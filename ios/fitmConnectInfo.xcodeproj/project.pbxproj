@@ -19,6 +19,7 @@
 		5C59FA0981A24A11BAC1869C /* Kanit-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F67A5BDB3BE445991822EAE /* Kanit-BlackItalic.ttf */; };
 		5CB40D46C4CD48EA906C32B6 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1945DBBB441C44E8B803F2F2 /* Kanit-Light.ttf */; };
 		649556E4290E465BA21725C4 /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1764738613FF40029A26FAD1 /* Kanit-ExtraLightItalic.ttf */; };
+		6641A7E52BB0938000F7B4D3 /* student.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6641A7E42BB0937F00F7B4D3 /* student.pdf */; };
 		7699B88040F8A987B510C191 /* libPods-fitmConnectInfo-fitmConnectInfoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-fitmConnectInfo-fitmConnectInfoTests.a */; };
 		77ABD5985AEF44B29F42EF56 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A5910EE5B2F4F49BD7B456C /* Kanit-Medium.ttf */; };
 		7A5053B96DA349478C20FF8B /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E718361D7CD34EB39D75A303 /* Kanit-SemiBold.ttf */; };
@@ -66,6 +67,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-fitmConnectInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitmConnectInfo.release.xcconfig"; path = "Target Support Files/Pods-fitmConnectInfo/Pods-fitmConnectInfo.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-fitmConnectInfo-fitmConnectInfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitmConnectInfo-fitmConnectInfoTests.debug.xcconfig"; path = "Target Support Files/Pods-fitmConnectInfo-fitmConnectInfoTests/Pods-fitmConnectInfo-fitmConnectInfoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-fitmConnectInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fitmConnectInfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6641A7E42BB0937F00F7B4D3 /* student.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = student.pdf; path = ../src/pdf/student.pdf; sourceTree = "<group>"; };
 		6F67A5BDB3BE445991822EAE /* Kanit-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-BlackItalic.ttf"; path = "../src/assets/fonts/Kanit-BlackItalic.ttf"; sourceTree = "<group>"; };
 		78C04DB7F3B34925920143D4 /* Kanit-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-ExtraLight.ttf"; path = "../src/assets/fonts/Kanit-ExtraLight.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = fitmConnectInfo/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		7C2F9F46AD39404C8596D154 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6641A7E42BB0937F00F7B4D3 /* student.pdf */,
 				FAC3487C73424A09A7E2811E /* Kanit-Black.ttf */,
 				6F67A5BDB3BE445991822EAE /* Kanit-BlackItalic.ttf */,
 				AC9678C6EE814F888604D523 /* Kanit-Bold.ttf */,
@@ -313,6 +316,7 @@
 				51D190E2220645E9ABB211B6 /* Kanit-ExtraBoldItalic.ttf in Resources */,
 				55B6D1AA74684121868506C2 /* Kanit-ExtraLight.ttf in Resources */,
 				649556E4290E465BA21725C4 /* Kanit-ExtraLightItalic.ttf in Resources */,
+				6641A7E52BB0938000F7B4D3 /* student.pdf in Resources */,
 				D5B0E5BC3EFC4E738114628D /* Kanit-Italic.ttf in Resources */,
 				5CB40D46C4CD48EA906C32B6 /* Kanit-Light.ttf in Resources */,
 				BA8F2A5F5D1D4D2D9B4F2862 /* Kanit-LightItalic.ttf in Resources */,
@@ -567,7 +571,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.--fitmConnectInfo-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.-fitmConnectInfo-rfc1034identifier-";
 				PRODUCT_NAME = fitmConnectInfo;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -600,7 +604,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.--fitmConnectInfo-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.-fitmConnectInfo-rfc1034identifier-";
 				PRODUCT_NAME = fitmConnectInfo;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
