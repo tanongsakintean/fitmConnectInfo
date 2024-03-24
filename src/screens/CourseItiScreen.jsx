@@ -54,8 +54,7 @@ const CourseItiScreen = ({navigation}) => {
               <Text
                 className=" text-white"
                 style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                เล่มหลักสูตรอุตสาหกรรมศาสตรบัณฑิต {'           '} (ฉบับปรับปรุง
-                พ.ศ. 2566)
+                เล่มหลักสูตรอุตสาหกรรมศาสตรบัณฑิต (ฉบับปรับปรุงพ.ศ. 2566)
               </Text>
             </LinearGradient>
           </TouchableOpacity>

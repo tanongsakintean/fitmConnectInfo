@@ -11,10 +11,7 @@ export default class ITIPDF extends React.Component {
     this.BtnRef = React.createRef();
   }
   render() {
-    const source =
-      Platform.os === 'ios'
-        ? 'bundle-assets://iti.pdf'
-        : 'bundle-assets://iti.pdf';
+    let iti = require('./iti.pdf');
 
     return (
       <View style={styles.container}>
@@ -22,7 +19,14 @@ export default class ITIPDF extends React.Component {
           ref={pdf => {
             this.pdf = pdf;
           }}
-          source={{uri: source, cache: true}}
+          source={
+            Platform.OS === 'ios'
+              ? iti
+              : {
+                  uri: 'bundle-assets://iti.pdf',
+                  cache: true,
+                }
+          }
           onLoadComplete={(numberOfPages, filePath) => {
             console.log(`Number of pages: ${numberOfPages}`);
           }}

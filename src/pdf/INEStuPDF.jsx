@@ -11,10 +11,7 @@ export default class INEStuPDF extends React.Component {
     this.BtnRef = React.createRef();
   }
   render() {
-    const source =
-      Platform.os === 'ios'
-        ? require('./inet.pdf')
-        : 'bundle-assets://inet.pdf';
+    let inet = require('./inet.pdf');
 
     return (
       <View style={styles.container}>
@@ -22,7 +19,14 @@ export default class INEStuPDF extends React.Component {
           ref={pdf => {
             this.pdf = pdf;
           }}
-          source={{uri: source, cache: true}}
+          source={
+            Platform.OS === 'ios'
+              ? inet
+              : {
+                  uri: 'bundle-assets://inet.pdf',
+                  cache: true,
+                }
+          }
           onLoadComplete={(numberOfPages, filePath) => {
             console.log(`Number of pages: ${numberOfPages}`);
           }}

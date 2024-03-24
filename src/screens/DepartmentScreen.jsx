@@ -1,4 +1,12 @@
-import {View, Text, Platform, Image, Dimensions, TouchableOpacity, ScrollView} from 'react-native';
+import {
+  View,
+  Text,
+  Platform,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import React from 'react';
 import {AcademicCapIcon, PlayIcon} from 'react-native-heroicons/solid';
 import Video from 'react-native-video';
@@ -7,7 +15,7 @@ import {commonImages} from '../constant/images';
 const {width} = Dimensions.get('window');
 const {height} = Dimensions.get('window');
 
-const DepartmentScreen = () => {
+const DepartmentScreen = ({navigation}) => {
   return (
     <>
       <ScrollView>
@@ -111,10 +119,12 @@ const DepartmentScreen = () => {
                   style={{
                     backgroundColor: '#336ac6',
                     width: Platform.OS === 'ios' ? width * 0.065 : width * 0.07,
-                    marginTop: Platform.OS === 'ios' ? height * 0.01 : height * 0.01,
+                    marginTop:
+                      Platform.OS === 'ios' ? height * 0.01 : height * 0.01,
                     marginBottom:
                       Platform.OS === 'ios' ? height * 0.01 : height * 0.009,
-                    marginRight: Platform.OS === 'ios' ? width * 0.03 : width * 0.03,
+                    marginRight:
+                      Platform.OS === 'ios' ? width * 0.03 : width * 0.03,
                   }}>
                   <View
                     className="ml-1.5"
@@ -129,7 +139,10 @@ const DepartmentScreen = () => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Course');
+            }}>
             <View
               className="bg-white mr-3 ml-3 mb-3 rounded-lg shadow-lg"
               style={{width: width * 0.9, height: height * 0.05}}>
@@ -168,10 +181,12 @@ const DepartmentScreen = () => {
                   style={{
                     backgroundColor: '#336ac6',
                     width: Platform.OS === 'ios' ? width * 0.065 : width * 0.07,
-                    marginTop: Platform.OS === 'ios' ? height * 0.01 : height * 0.01,
+                    marginTop:
+                      Platform.OS === 'ios' ? height * 0.01 : height * 0.01,
                     marginBottom:
                       Platform.OS === 'ios' ? height * 0.01 : height * 0.009,
-                    marginRight: Platform.OS === 'ios' ? width * 0.03 : width * 0.03,
+                    marginRight:
+                      Platform.OS === 'ios' ? width * 0.03 : width * 0.03,
                   }}>
                   <View
                     className="ml-1.5"

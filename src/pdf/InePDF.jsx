@@ -11,10 +11,7 @@ export default class InePDF extends React.Component {
     this.BtnRef = React.createRef();
   }
   render() {
-    const source =
-      Platform.os === 'ios'
-        ? 'bundle-assets://ine.pdf'
-        : 'bundle-assets://ine.pdf';
+    let ine = require('./ine.pdf');
 
     return (
       <View style={styles.container}>
@@ -22,7 +19,14 @@ export default class InePDF extends React.Component {
           ref={pdf => {
             this.pdf = pdf;
           }}
-          source={{uri: source, cache: true}}
+          source={
+            Platform.OS === 'ios'
+              ? ine
+              : {
+                  uri: 'bundle-assets://ine.pdf',
+                  cache: true,
+                }
+          }
           onLoadComplete={(numberOfPages, filePath) => {
             console.log(`Number of pages: ${numberOfPages}`);
           }}
