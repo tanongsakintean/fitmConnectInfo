@@ -53,7 +53,7 @@ const TabNavigator = () => {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={route => ({
-        tabBarActiveTintColor: '#6495ED',
+        tabBarActiveTintColor: '#336ac6',
         tabBarInactiveTintColor: '#000000',
         tabBarStyle: {
           backgroundColor: '#FFF',
@@ -104,7 +104,7 @@ const TabNavigator = () => {
           headerTitle: 'หลักสูตร',
           headerTintColor: '#fff',
           headerStyle: {
-            backgroundColor: '#20A5DE',
+            backgroundColor: '#336ac6',
           },
           headerTitleStyle: {
             fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
@@ -142,7 +142,7 @@ const TabNavigator = () => {
           headerTitle: 'อาจารย์ในภาควิชา',
           headerTintColor: '#fff',
           headerStyle: {
-            backgroundColor: '#6495ED',
+            backgroundColor: '#336ac6',
           },
           headerTitleStyle: {
             fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
@@ -226,7 +226,7 @@ export default TabNavigator;
 
 const style = StyleSheet.create({
   radius_in: {
-    backgroundColor: '#6495ED',
+    backgroundColor: '#336ac6',
     width: 50,
     height: 50,
     borderRadius: 35,

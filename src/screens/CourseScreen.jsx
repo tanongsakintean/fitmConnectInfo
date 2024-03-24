@@ -28,7 +28,7 @@ const CourseScreen = ({navigation}) => {
       <ScrollView>
         <TouchableOpacity onPress={() => navigation.navigate('ITCourse')}>
           <View className=" flex flex-row my-2  p-5">
-            <View className=" flex w-full py-5 justify-center items-center  rounded-md shadow-md  bg-[#6495ED]">
+            <View className=" flex w-full py-5 justify-center items-center  rounded-md shadow-md  bg-[#336ac6]">
               <Text
                 className=" text-6xl text-white   "
                 style={{fontFamily: 'Kanit-Medium'}}>
@@ -45,7 +45,7 @@ const CourseScreen = ({navigation}) => {
 
         <TouchableOpacity onPress={() => navigation.navigate('INECourse')}>
           <View className=" flex flex-row my-2  p-5">
-            <View className=" flex w-full py-5 justify-center items-center  rounded-md shadow-md  bg-[#6495ED]">
+            <View className=" flex w-full py-5 justify-center items-center  rounded-md shadow-md  bg-[#336ac6]">
               <Text
                 className=" text-6xl text-white   "
                 style={{fontFamily: 'Kanit-Medium'}}>
@@ -62,7 +62,7 @@ const CourseScreen = ({navigation}) => {
 
         <TouchableOpacity onPress={() => navigation.navigate('ITICourse')}>
           <View className=" flex flex-row my-2  p-5">
-            <View className=" flex w-full py-5 justify-center items-center  rounded-md shadow-md  bg-[#6495ED]">
+            <View className=" flex w-full py-5 justify-center items-center  rounded-md shadow-md  bg-[#336ac6]">
               <Text
                 className=" text-6xl text-white   "
                 style={{fontFamily: 'Kanit-Medium'}}>

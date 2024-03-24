@@ -57,7 +57,7 @@ const PersonnalScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View className="bg-[#6495ED] my-3 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-3 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               แขนงวิชาวิทยาการสารสนเทศ
@@ -230,7 +230,7 @@ const PersonnalScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               แขนงวิชาเทคโนโลยีเครือข่าย
@@ -348,7 +348,7 @@ const PersonnalScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               แขนงวิชาเทคโนโลยีอุตสาหกรรม
@@ -466,7 +466,7 @@ const PersonnalScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               แขนงวิชาเทคโนโลยีมัลติมีเดีย
@@ -616,7 +616,7 @@ const PersonnalScreen = ({navigation}) => {
             className="  rounded-md  my-5   flex flex-row justify-center items-center px-2"></View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               แขนงวิชาเทคโนโลยีระบบธุรกิจ
@@ -679,7 +679,7 @@ const PersonnalScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               ช่างเทคนิค
@@ -719,7 +719,7 @@ const PersonnalScreen = ({navigation}) => {
             className="  rounded-md  my-5   flex flex-row justify-center items-center px-2"></View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               นักวิชาการคอมพิวเตอร์
@@ -759,7 +759,7 @@ const PersonnalScreen = ({navigation}) => {
             className="  rounded-md  my-5   flex flex-row justify-center items-center px-2"></View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               เจ้าหน้าที่บริหารงานทั่วไป
@@ -821,7 +821,7 @@ const PersonnalScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View className="bg-[#6495ED] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
+        <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
             <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
               วิศวกร
