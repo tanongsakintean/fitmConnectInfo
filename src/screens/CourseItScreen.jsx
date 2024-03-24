@@ -5,6 +5,7 @@ import {
   BackHandler,
   TouchableOpacity,
   ScrollView,
+  Platform,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import LinearGradient from 'react-native-linear-gradient';
@@ -25,126 +26,141 @@ const CourseItScreen = ({navigation}) => {
     };
   });
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <View className=" flex mt-4 flex-row justify-center items-center">
+    <ScrollView>
+      <View>
+        <View
+          className=" flex flex-row justify-center items-center"
+          style={{marginTop: Platform.os === 'ios' ? 0 : 10}}>
+          <Text
+            className=" m-2 text-black  text-lg"
+            style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium'}}>
+            หลักสูตรวิทยาศาสตร์บัณฑิต (วท.บ.)
+          </Text>
+        </View>
+        <View className=" px-2 flex -mt-3 flex-row justify-center items-center">
+          <Text
+            className=" text-black text-md"
+            style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium'}}>
+            สาขาวิชาเทคโนโลยีสารสนเทศ{' '}
+          </Text>
+        </View>
+      </View>
+      <View className="my-5">
+        <TouchableOpacity onPress={() => navigation.navigate('ITCoursePDF')}>
+          <LinearGradient
+            start={{x: -1, y: 0}}
+            end={{x: 1, y: 0}}
+            colors={['#62cff4', '#2c67f2']}
+            className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
             <Text
-              className=" m-2 text-black  text-lg"
-              style={{fontFamily: 'Kanit-Medium'}}>
-              หลักสูตรวิทยาศาสตร์บัณฑิต (วท.บ.)
+              className=" text-white"
+              style={{
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                fontSize: Platform.OS === 'ios' ? 14 : 11,
+              }}>
+              ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับนักเรียน
             </Text>
-          </View>
-          <View className=" px-2 flex -mt-3 flex-row justify-center items-center">
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
+
+      <View className="my-5">
+        <TouchableOpacity onPress={() => navigation.navigate('ITStuCoursePDF')}>
+          <LinearGradient
+            start={{x: -1, y: 0}}
+            end={{x: 1, y: 0}}
+            colors={['#62cff4', '#2c67f2']}
+            className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
             <Text
-              className=" text-black text-md"
-              style={{fontFamily: 'Kanit-Medium'}}>
-              สาขาวิชาเทคโนโลยีสารสนเทศ{' '}
+              className=" text-white"
+              style={{
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                fontSize: Platform.OS === 'ios' ? 14 : 11,
+              }}>
+              ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับนักศึกษา
             </Text>
-          </View>
-        </View>
-        <View className="my-5">
-          <TouchableOpacity onPress={() => navigation.navigate('ITCoursePDF')}>
-            <LinearGradient
-              start={{x: -1, y: 0}}
-              end={{x: 1, y: 0}}
-              colors={['#62cff4', '#2c67f2']}
-              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
-              <Text
-                className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับนักเรียน
-              </Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
 
-        <View className="my-5">
-          <TouchableOpacity
-            onPress={() => navigation.navigate('ITStuCoursePDF')}>
-            <LinearGradient
-              start={{x: -1, y: 0}}
-              end={{x: 1, y: 0}}
-              colors={['#62cff4', '#2c67f2']}
-              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
-              <Text
-                className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับนักศึกษา
-              </Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
+      <View className="my-5">
+        <TouchableOpacity onPress={() => navigation.navigate('ITOldCoursePDF')}>
+          <LinearGradient
+            start={{x: -1, y: 0}}
+            end={{x: 1, y: 0}}
+            colors={['#62cff4', '#2c67f2']}
+            className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
+            <Text
+              className=" text-white "
+              style={{
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                fontSize: Platform.OS === 'ios' ? 14 : 11,
+              }}>
+              ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับศิษย์เก่า
+            </Text>
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
 
-        <View className="my-5">
-          <TouchableOpacity
-            onPress={() => navigation.navigate('ITOldCoursePDF')}>
-            <LinearGradient
-              start={{x: -1, y: 0}}
-              end={{x: 1, y: 0}}
-              colors={['#62cff4', '#2c67f2']}
-              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
-              <Text
-                className=" text-white "
-                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับศิษย์เก่า
-              </Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
+      <View className="my-5">
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ITStationCoursePDF')}>
+          <LinearGradient
+            start={{x: -1, y: 0}}
+            end={{x: 1, y: 0}}
+            colors={['#62cff4', '#2c67f2']}
+            className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
+            <Text
+              className=" text-white"
+              style={{
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                fontSize: Platform.OS === 'ios' ? 14 : 11,
+              }}>
+              ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับสถานประกอบการ
+            </Text>
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
 
-        <View className="my-5">
-          <TouchableOpacity
-            onPress={() => navigation.navigate('ITStationCoursePDF')}>
-            <LinearGradient
-              start={{x: -1, y: 0}}
-              end={{x: 1, y: 0}}
-              colors={['#62cff4', '#2c67f2']}
-              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
-              <Text
-                className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับสถานประกอบการ
-              </Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
+      <View className="my-5">
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ITManageCoursePDF')}>
+          <LinearGradient
+            start={{x: -1, y: 0}}
+            end={{x: 1, y: 0}}
+            colors={['#62cff4', '#2c67f2']}
+            className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
+            <Text
+              className=" text-white"
+              style={{
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                fontSize: Platform.OS === 'ios' ? 14 : 11,
+              }}>
+              ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับอาจารย์และผู้บริหาร
+            </Text>
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
 
-        <View className="my-5">
-          <TouchableOpacity
-            onPress={() => navigation.navigate('ITManageCoursePDF')}>
-            <LinearGradient
-              start={{x: -1, y: 0}}
-              end={{x: 1, y: 0}}
-              colors={['#62cff4', '#2c67f2']}
-              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
-              <Text
-                className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับอาจารย์และผู้บริหาร
-              </Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
-
-        <View className="my-5">
-          <TouchableOpacity
-            onPress={() => navigation.navigate('IT62CoursePDF')}>
-            <LinearGradient
-              start={{x: -1, y: 0}}
-              end={{x: 1, y: 0}}
-              colors={['#62cff4', '#2c67f2']}
-              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
-              <Text
-                className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
-                เล่มหลักสูตรวิทยาศาสตรบัณฑิต (หลักสูตรปรับปรุง พ.ศ. 2562)
-              </Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+      <View className="my-5">
+        <TouchableOpacity onPress={() => navigation.navigate('IT62CoursePDF')}>
+          <LinearGradient
+            start={{x: -1, y: 0}}
+            end={{x: 1, y: 0}}
+            colors={['#62cff4', '#2c67f2']}
+            className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
+            <Text
+              className=" text-white"
+              style={{
+                fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                fontSize: Platform.OS === 'ios' ? 14 : 11,
+              }}>
+              เล่มหลักสูตรวิทยาศาสตรบัณฑิต (หลักสูตรปรับปรุง พ.ศ. 2562)
+            </Text>
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
+    </ScrollView>
   );
 };
 

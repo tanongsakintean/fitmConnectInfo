@@ -3,19 +3,8 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import CourseItScreen from '../screens/CourseItScreen';
 import CourseScreen from '../screens/CourseScreen';
-import {Dimensions, TouchableOpacity} from 'react-native';
-import {
-  HomeIcon,
-  ClockIcon,
-  QrCodeIcon,
-  BellAlertIcon,
-  UserIcon,
-  AcademicCapIcon,
-  IdentificationIcon,
-  Bars3Icon,
-  BuildingOffice2Icon,
-  ArrowLeftIcon,
-} from 'react-native-heroicons/outline';
+import {Dimensions, Platform, TouchableOpacity} from 'react-native';
+import {AcademicCapIcon, ArrowLeftIcon} from 'react-native-heroicons/outline';
 import CourseItiScreen from '../screens/CourseItiScreen';
 import CourseIneScreen from '../screens/CourseIneScreen';
 import ItPDF from '../pdf/ItPDF';
@@ -51,7 +40,7 @@ const CourseStack = ({navigation}) => {
               backgroundColor: '#336ac6',
             },
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -84,7 +73,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -118,7 +107,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -152,7 +141,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -186,7 +175,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -220,7 +209,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -254,7 +243,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -288,7 +277,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -322,7 +311,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -356,7 +345,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -390,7 +379,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -425,7 +414,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',
@@ -460,7 +449,7 @@ const CourseStack = ({navigation}) => {
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontFamily: 'Kanit-Medium',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 15,
               fontWeight: 'bold',
               textAlign: 'center',

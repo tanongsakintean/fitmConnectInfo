@@ -30,6 +30,8 @@ import PersonnalScreen from '../screens/PersonnalScreen';
 import MenuScreen from '../screens/MenuScreen';
 import CourseItScreen from '../screens/CourseItScreen';
 import CourseStack from './CourseStack';
+// import DepartmentStack from './DepartmentStack';
+import DepartmentStacks from './DepartmentStacks';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -62,16 +64,16 @@ const TabNavigator = () => {
           height: Platform.OS === 'ios' ? height * 0.1 : 60,
         },
         tabBarLabelStyle: {
-          fontFamily: 'Kanit-Medium',
+          fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
           fontSize: 13,
         },
       })}>
       <Tab.Screen
         name="Department"
-        component={DepartmentScreen}
+        component={DepartmentStacks}
         options={({navigation}) => ({
           tabBarLabel: 'ภาควิชา',
-          headerShown: true,
+          headerShown: false,
           headerTitle: 'ภาควิชา',
           headerTintColor: '#fff',
           headerStyle: {
@@ -86,11 +88,6 @@ const TabNavigator = () => {
           },
           tabBarIcon: ({color, size}) => (
             <AcademicCapIcon color={color} size={size} />
-          ),
-          headerLeft: ({}) => (
-            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-              <ArrowLeftIcon style={{marginLeft: 10}} color="#fff" size="23" />
-            </TouchableOpacity>
           ),
         })}
       />
@@ -234,7 +231,7 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   radius_out: {
-    shadowOpacity: 0.2,
+    // shadowOpacity: 0.2,
     backgroundColor: '#FFFF',
     width: 70,
     height: 70,

@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   ScrollView,
   BackHandler,
+  Platform,
 } from 'react-native';
 import {personImage} from '../constant/images';
 
@@ -42,14 +43,20 @@ const PersonnalScreen = ({navigation}) => {
             />
             <View className=" flex flex-row  justify-center mt-3">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 10}}
+                style={{
+                  fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                  fontSize: 10,
+                }}
                 className="text-black">
                 ผศ.ดร.ขนิษฐา นามี
               </Text>
             </View>
             <View className=" flex flex-row  justify-center ">
               <Text
-                style={{fontFamily: 'Kanit-Bold', fontSize: 13}}
+                style={{
+                  fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+                  fontSize: 13,
+                }}
                 className=" text-black">
                 หัวหน้าภาควิชาฯ
               </Text>
@@ -59,7 +66,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-3 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               แขนงวิชาวิทยาการสารสนเทศ
             </Text>
           </View>
@@ -82,7 +91,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3  ">
@@ -109,7 +118,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -137,7 +146,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -164,7 +173,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -192,7 +201,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -219,7 +228,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -232,7 +241,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               แขนงวิชาเทคโนโลยีเครือข่าย
             </Text>
           </View>
@@ -255,7 +266,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -282,7 +293,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -310,7 +321,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -337,7 +348,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -350,7 +361,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               แขนงวิชาเทคโนโลยีอุตสาหกรรม
             </Text>
           </View>
@@ -373,7 +386,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -400,7 +413,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -428,7 +441,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -455,7 +468,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -468,7 +481,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               แขนงวิชาเทคโนโลยีมัลติมีเดีย
             </Text>
           </View>
@@ -491,7 +506,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -518,7 +533,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -546,7 +561,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -573,7 +588,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -601,7 +616,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -618,7 +633,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               แขนงวิชาเทคโนโลยีระบบธุรกิจ
             </Text>
           </View>
@@ -641,7 +658,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -668,7 +685,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3">
@@ -681,7 +698,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               ช่างเทคนิค
             </Text>
           </View>
@@ -704,7 +723,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -721,7 +740,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               นักวิชาการคอมพิวเตอร์
             </Text>
           </View>
@@ -744,7 +765,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -761,7 +782,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               เจ้าหน้าที่บริหารงานทั่วไป
             </Text>
           </View>
@@ -784,7 +807,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -810,7 +833,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">
@@ -823,7 +846,9 @@ const PersonnalScreen = ({navigation}) => {
 
         <View className="bg-[#336ac6] my-5 mt-6 p-4 shadow-md flex flex-row justify-center">
           <View>
-            <Text style={{fontFamily: 'Kanit-Bold'}} className=" text-white">
+            <Text
+              style={{fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold'}}
+              className=" text-white">
               วิศวกร
             </Text>
           </View>
@@ -846,7 +871,7 @@ const PersonnalScreen = ({navigation}) => {
               <View className=" flex flex-row  justify-center ">
                 <Text
                   style={{
-                    fontFamily: 'Kanit-Medium',
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                     fontSize: 10,
                   }}
                   className="text-black my-3 ">

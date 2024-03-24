@@ -19,6 +19,14 @@ import {Categories} from '../data/Categories';
 
 const HomeScreen = () => {
   const [activeCategory, setActiveCategory] = useState('ทั้งหมด');
+  const filteredNews = FeedNews.filter(
+    item =>
+      activeCategory === 'ทั้งหมด' ||
+      (activeCategory === 'ข่าวประชาสัมพันธ์' && item.group === 1) ||
+      (activeCategory === 'ข่าวทุนวิจัย/อบรม' && item.group === 2) ||
+      (activeCategory === 'ข่าวจัดซื้อจัดจ้าง' && item.group === 3) ||
+      (activeCategory === 'ข่าววิชาการ' && item.group === 4),
+  );
   return (
     <>
       <HeaderHome />
@@ -82,8 +90,8 @@ const HomeScreen = () => {
                       className="p-2.5 px-2 rounded-lg mr-2">
                       <Text
                         style={{
-                          ffontFamily:
-                            Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+                          fontFamily:
+                            Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                           fontSize: 13,
                         }}
                         className="text-white">
@@ -99,7 +107,8 @@ const HomeScreen = () => {
                       className="bg-stone-200 p-2.5 px-2 rounded-lg mr-2">
                       <Text
                         style={{
-                          fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+                          fontFamily:
+                            Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                           fontSize: 13,
                         }}
                         className="text-slate-500">
@@ -116,7 +125,7 @@ const HomeScreen = () => {
         <View className="mt-5 space-y-2">
           <View className="pl-4">
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              {FeedNews.map((item, index) => {
+              {filteredNews.map((item, index) => {
                 return <NewsCard key={index} news={item} />;
               })}
             </ScrollView>
