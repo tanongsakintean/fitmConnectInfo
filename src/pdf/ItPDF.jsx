@@ -3,6 +3,7 @@ import {Platform, Text, TouchableOpacity} from 'react-native';
 import {StyleSheet, Dimensions, View} from 'react-native';
 import Pdf from 'react-native-pdf';
 import {ArrowUpIcon} from 'react-native-heroicons/outline';
+import student from './student.pdf';
 
 export default class ItPDF extends React.Component {
   constructor(props) {
@@ -12,9 +13,7 @@ export default class ItPDF extends React.Component {
   }
   render() {
     const source =
-      Platform.os === 'ios'
-        ? require('./student.pdf')
-        : 'bundle-assets://student.pdf';
+      Platform.os === 'ios' ? student : 'bundle-assets://student.pdf';
 
     return (
       <View style={styles.container}>
