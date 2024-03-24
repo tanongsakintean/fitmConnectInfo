@@ -161,60 +161,31 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Menu"
         component={MenuScreen}
-        options={{
+        options={({navigation}) => ({
           tabBarLabel: 'เมนู',
-          headerShown: false,
+          headerShown: true,
+          headerTitle: 'เมนู',
+          headerTintColor: '#fff',
+          headerStyle: {
+            backgroundColor: '#336ac6',
+          },
+          headerTitleStyle: {
+            fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+            fontSize: 15,
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: 260,
+          },
           tabBarIcon: ({color, size}) => (
             <Bars3Icon color={color} size={size} />
           ),
-        }}
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+              <ArrowLeftIcon style={{marginLeft: 10}} color="#fff" size="23" />
+            </TouchableOpacity>
+          ),
+        })}
       />
-      {/* <Tab.Screen
-        name="history"
-        component={HistoryScreen}
-        options={{
-          tabBarLabel: 'ประวัติ',
-          // headerStyle: {
-          //   backgroundColor: '#F37234',
-          //   height: 110,
-          // },
-          // headerTitleStyle: {
-          //   fontFamily: 'Kanit-Bold',
-          //   fontSize: 20,
-          //   color: '#FFFF',
-          // },
-          unmountOnBlur: true,
-          header: () => <HeaderStack goBackClose title="ประวัติ" />,
-          tabBarIcon: ({color, size}) => (
-            <ClockIcon color={color} size={size} />
-          ),
-        }}
-      /> */}
-
-      {/* <Tab.Screen
-        name="notification"
-        component={NotificationScreen}
-        options={{
-          tabBarLabel: 'แจ้งเตือน',
-          // tabBarBadge: 3,
-          // tabBarBadgeStyle: {backgroundColor: 'red'},
-          unmountOnBlur: true,
-          header: () => <HeaderStack goBackClose title="แจ้งเตือน" />,
-          tabBarIcon: ({color, size}) => (
-            <BellAlertIcon color={color} size={size} />
-          ),
-        }}
-      /> */}
-      {/* <Tab.Screen
-        name="account"
-        component={AccountScreen}
-        options={{
-          tabBarLabel: 'บัญชี',
-          unmountOnBlur: true,
-          header: () => <HeaderStack goBackClose title="บัญชี" />,
-          tabBarIcon: ({color, size}) => <UserIcon color={color} size={size} />,
-        }}
-      /> */}
     </Tab.Navigator>
   );
 };
