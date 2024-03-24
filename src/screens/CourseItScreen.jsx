@@ -44,15 +44,15 @@ const CourseItScreen = ({navigation}) => {
           </View>
         </View>
         <View className="my-5">
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('ITCoursePDF')}>
             <LinearGradient
               start={{x: -1, y: 0}}
               end={{x: 1, y: 0}}
-              colors={['#9DCAEB', '#AFD5F0', '#C3EEFA']}
+              colors={['#62cff4', '#2c67f2']}
               className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
               <Text
-                className=" text-white font-lg"
-                style={{fontFamily: 'Kanit-Medium'}}>
+                className=" text-white"
+                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
                 ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับนักเรียน
               </Text>
             </LinearGradient>
@@ -61,61 +61,81 @@ const CourseItScreen = ({navigation}) => {
 
         <View className="my-5">
           <TouchableOpacity>
-            <View className=" flex flex-row justify-center  items-center mx-6 rounded-md  shadow-md px-3 py-6 bg-[#9DCAEB]">
+            <LinearGradient
+              start={{x: -1, y: 0}}
+              end={{x: 1, y: 0}}
+              colors={['#62cff4', '#2c67f2']}
+              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
               <Text
-                className=" text-white font-lg"
-                style={{fontFamily: 'Kanit-Medium'}}>
+                className=" text-white"
+                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
                 ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับนักศึกษา
               </Text>
-            </View>
+            </LinearGradient>
           </TouchableOpacity>
         </View>
 
         <View className="my-5">
           <TouchableOpacity>
-            <View className=" flex flex-row justify-center  items-center mx-6 rounded-md  shadow-md px-3 py-6 bg-[#AFD5F0]">
+            <LinearGradient
+              start={{x: -1, y: 0}}
+              end={{x: 1, y: 0}}
+              colors={['#62cff4', '#2c67f2']}
+              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
               <Text
-                className=" text-white font-lg"
-                style={{fontFamily: 'Kanit-Medium'}}>
+                className=" text-white "
+                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
                 ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับศิษย์เก่า
               </Text>
-            </View>
+            </LinearGradient>
           </TouchableOpacity>
         </View>
 
         <View className="my-5">
           <TouchableOpacity>
-            <View className=" flex flex-row justify-center  items-center mx-6 rounded-md  shadow-md px-3 py-6 bg-[#b7dcf7]">
+            <LinearGradient
+              start={{x: -1, y: 0}}
+              end={{x: 1, y: 0}}
+              colors={['#62cff4', '#2c67f2']}
+              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
               <Text
                 className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}>
+                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
                 ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับสถานประกอบการ
               </Text>
-            </View>
+            </LinearGradient>
           </TouchableOpacity>
         </View>
 
         <View className="my-5">
           <TouchableOpacity>
-            <View className=" flex flex-row justify-center  items-center mx-6 rounded-md  shadow-md px-3 py-6 bg-[#badef7]">
+            <LinearGradient
+              start={{x: -1, y: 0}}
+              end={{x: 1, y: 0}}
+              colors={['#62cff4', '#2c67f2']}
+              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
               <Text
                 className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}>
+                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
                 ข้อมูลหลักสูตรวิทยาศาสตรบัณฑิตสำหรับอาจารย์และผู้บริหาร
               </Text>
-            </View>
+            </LinearGradient>
           </TouchableOpacity>
         </View>
 
         <View className="my-5">
           <TouchableOpacity>
-            <View className=" flex flex-row justify-center  items-center mx-6 rounded-md  shadow-md px-3 py-6 bg-[#bee0f8]">
+            <LinearGradient
+              start={{x: -1, y: 0}}
+              end={{x: 1, y: 0}}
+              colors={['#62cff4', '#2c67f2']}
+              className=" flex flex-row justify-center  items-center mx-6 rounded-md   px-3 py-6  ">
               <Text
                 className=" text-white"
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}>
+                style={{fontFamily: 'Kanit-Medium', fontSize: 11}}>
                 เล่มหลักสูตรวิทยาศาสตรบัณฑิต (หลักสูตรปรับปรุง พ.ศ. 2562)
               </Text>
-            </View>
+            </LinearGradient>
           </TouchableOpacity>
         </View>
       </ScrollView>
