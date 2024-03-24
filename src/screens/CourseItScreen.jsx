@@ -60,7 +60,8 @@ const CourseItScreen = ({navigation}) => {
         </View>
 
         <View className="my-5">
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('ITStuCoursePDF')}>
             <LinearGradient
               start={{x: -1, y: 0}}
               end={{x: 1, y: 0}}
@@ -76,7 +77,8 @@ const CourseItScreen = ({navigation}) => {
         </View>
 
         <View className="my-5">
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('ITOldCoursePDF')}>
             <LinearGradient
               start={{x: -1, y: 0}}
               end={{x: 1, y: 0}}
@@ -92,7 +94,8 @@ const CourseItScreen = ({navigation}) => {
         </View>
 
         <View className="my-5">
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('ITStationCoursePDF')}>
             <LinearGradient
               start={{x: -1, y: 0}}
               end={{x: 1, y: 0}}
@@ -108,7 +111,8 @@ const CourseItScreen = ({navigation}) => {
         </View>
 
         <View className="my-5">
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('ITManageCoursePDF')}>
             <LinearGradient
               start={{x: -1, y: 0}}
               end={{x: 1, y: 0}}
@@ -124,7 +128,8 @@ const CourseItScreen = ({navigation}) => {
         </View>
 
         <View className="my-5">
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('IT62CoursePDF')}>
             <LinearGradient
               start={{x: -1, y: 0}}
               end={{x: 1, y: 0}}
