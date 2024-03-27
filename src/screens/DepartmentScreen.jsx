@@ -6,16 +6,22 @@ import {
   Dimensions,
   TouchableOpacity,
   ScrollView,
+  Modal,
+  Pressable,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {AcademicCapIcon, PlayIcon} from 'react-native-heroicons/solid';
 import Video from 'react-native-video';
 import {commonImages} from '../constant/images';
+import {Alert} from 'react-native';
+import {ModalVideo} from '../components/ModalVideo';
 
 const {width} = Dimensions.get('window');
 const {height} = Dimensions.get('window');
 
 const DepartmentScreen = ({navigation}) => {
+  const [modalVisible, setModalVisible] = useState(false);
+
   return (
     <ScrollView>
       <View>
@@ -79,8 +85,11 @@ const DepartmentScreen = ({navigation}) => {
           }}>
           รายละเอียดภาควิชา
         </Text>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('VideoDepartment')}>
+        <ModalVideo
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+        />
+        <TouchableOpacity onPress={() => setModalVisible(true)}>
           <View
             className="bg-white m-3 rounded-lg shadow-lg"
             style={{width: width * 0.9, height: height * 0.05}}>
@@ -110,7 +119,7 @@ const DepartmentScreen = ({navigation}) => {
                       fontSize: Platform.OS === 'ios' ? 16 : 14,
                       color: '#000',
                     }}>
-                    วีดีโอแนะนำ
+                    วีดีโอแนะนำภาควิชา
                   </Text>
                 </View>
               </View>

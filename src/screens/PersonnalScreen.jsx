@@ -61,6 +61,26 @@ const PersonnalScreen = ({navigation}) => {
                 หัวหน้าภาควิชาฯ
               </Text>
             </View>
+            <View className=" flex flex-row  justify-center ">
+              <Text
+                style={{
+                  fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                  fontSize: 10,
+                }}
+                className="text-black">
+                Email : khanista.n
+              </Text>
+            </View>
+            <View className=" flex flex-row  justify-center">
+              <Text
+                style={{
+                  fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                  fontSize: 10,
+                }}
+                className="text-black">
+                @itm.kmutnb.ac.th
+              </Text>
+            </View>
           </View>
         </View>
 
@@ -96,6 +116,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3  ">
                   ผศ.พีระศักดิ์ เสรีกุลี
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : khanista.n
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
