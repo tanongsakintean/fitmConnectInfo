@@ -32,6 +32,7 @@ import CourseItScreen from '../screens/CourseItScreen';
 import CourseStack from './CourseStack';
 // import DepartmentStack from './DepartmentStack';
 import DepartmentStacks from './DepartmentStacks';
+import HomeStacks from './HomeStacks';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -43,7 +44,7 @@ const HomeStack = () => {
     <Stack.Navigator>
       <Stack.Screen
         name="Home"
-        component={HomeScreen}
+        component={HomeStacks}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -17,8 +17,9 @@ import {EventCard} from '../components/EventCard';
 import {NewspaperIcon, MapIcon} from 'react-native-heroicons/solid';
 import {FeedNews} from '../data/FeedNews';
 import {Categories} from '../data/Categories';
+import {event} from '../data/event';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   const [activeCategory, setActiveCategory] = useState('ทั้งหมด');
   const filteredNews = FeedNews.filter(
     item =>
@@ -44,6 +45,13 @@ const HomeScreen = () => {
               <Image
                 resizeMode="contain"
                 style={styles.image}
+                source={commonImages.slideImg1}
+              />
+            </View>
+            <View>
+              <Image
+                resizeMode="contain"
+                style={styles.image}
                 source={commonImages.slideImg2}
               />
             </View>
@@ -52,13 +60,6 @@ const HomeScreen = () => {
                 resizeMode="contain"
                 style={styles.image}
                 source={commonImages.slideImg3}
-              />
-            </View>
-            <View>
-              <Image
-                resizeMode="contain"
-                style={styles.image}
-                source={commonImages.slideImg4}
               />
             </View>
           </SwiperFlatList>
@@ -146,15 +147,21 @@ const HomeScreen = () => {
             กิจกรรม
           </Text>
         </View>
-        {/* <View className="mt-4 space-y-2 mb-5"> */}
-        {/*   <View className="pl-3"> */}
-        {/*     <ScrollView horizontal showsHorizontalScrollIndicator={false}> */}
-        {/*       {filteredNews.map((item, index) => { */}
-        {/*         return <EventCard key={index} news={item} />; */}
-        {/*       })} */}
-        {/*     </ScrollView> */}
-        {/*   </View> */}
-        {/* </View> */}
+
+        <View className=" space-y-4 mb-5">
+          <View className="flex flex-row flex-wrap items-center justify-evenly">
+            {event.map(item => {
+              return (
+                <EventCard
+                  navigation={navigation}
+                  img={item.image}
+                  title={item.title}
+                  id={item.id}
+                />
+              );
+            })}
+          </View>
+        </View>
       </ScrollView>
     </>
   );

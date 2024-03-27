@@ -1,31 +1,42 @@
 import React, {useState} from 'react';
-import {View, Text, Image, Platform, TouchableOpacity} from 'react-native';
-import {ClockIcon} from 'react-native-heroicons/outline';
+import {
+  View,
+  Text,
+  Image,
+  Platform,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native';
 
-export const NewsCard = ({news}) => {
-  const [newsData, setNewsData] = useState('');
+export const EventCard = ({img, title, id, navigation}) => {
+  const {width} = Dimensions.get('window');
+  const {height} = Dimensions.get('window');
   return (
     <TouchableOpacity
-      onPress={() => {
-        setNewsData();
-      }}>
-      <View className="mr-4 relative bg-white rounded-3xl py-2 ">
-        <View className=" flex  flex-row justify-center items-center">
+      onPress={() =>
+        navigation.navigate('DetailEvent', {
+          id,
+        })
+      }>
+      <View className=" mx-5  rounded-3xl bg-white my-4    shadow-md">
+        <View className="  flex flex-row   justify-center  items-center  m-0 p-0">
           <Image
-            resizeMode="contain"
-            source={news.image}
-            className="w-56 h-28 "
+            resizeMode="cover"
+            className=" w-full rounded-t-3xl"
+            style={{
+              height: 150,
+            }}
+            source={img}
           />
         </View>
-        <View className="w-56 bg-white rounded-b-xl h-20 flex  flex-col justify-around">
+        <View className=" flex flex-row justify-center items-center pb-3">
           <Text
-            numberOfLines={2}
-            className="ml-2 mt-1"
+            className="  p-2"
             style={{
-              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
               fontSize: 13,
             }}>
-            {news.title}
+            {title}
           </Text>
         </View>
       </View>
