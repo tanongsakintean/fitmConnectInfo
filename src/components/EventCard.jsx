@@ -27,36 +27,6 @@ export const NewsCard = ({news}) => {
             }}>
             {news.title}
           </Text>
-
-          <View>
-            <View className="flex flex-row justify-between  ">
-              <View
-                className=" rounded-lg h-5 w-9 ml-3"
-                style={{backgroundColor: '#336ac6'}}>
-                <Text
-                  className="ml-1.5 mt-0.5 text-white"
-                  style={{
-                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
-                    fontSize: 10,
-                  }}>
-                  FITM
-                </Text>
-              </View>
-              <View className="flex flex-row" style={{}}>
-                <View className="mr-1">
-                  <ClockIcon color="#000" size={15} />
-                </View>
-                <Text
-                  className="mr-3"
-                  style={{
-                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
-                    fontSize: 11,
-                  }}>
-                  {news.date}
-                </Text>
-              </View>
-            </View>
-          </View>
         </View>
       </View>
     </TouchableOpacity>

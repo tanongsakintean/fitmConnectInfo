@@ -13,7 +13,8 @@ import HeaderHome from '../components/header/HeaderHome';
 import {SwiperFlatList} from 'react-native-swiper-flatlist';
 import {commonImages} from '../constant/images';
 import {NewsCard} from '../components/NewsCard';
-import {NewspaperIcon} from 'react-native-heroicons/solid';
+import {EventCard} from '../components/EventCard';
+import {NewspaperIcon, MapIcon} from 'react-native-heroicons/solid';
 import {FeedNews} from '../data/FeedNews';
 import {Categories} from '../data/Categories';
 
@@ -22,30 +23,23 @@ const HomeScreen = () => {
   const filteredNews = FeedNews.filter(
     item =>
       activeCategory === 'ทั้งหมด' ||
-      (activeCategory === 'ข่าวประชาสัมพันธ์' && item.group === 1) ||
-      (activeCategory === 'ข่าวทุนวิจัย/อบรม' && item.group === 2) ||
-      (activeCategory === 'ข่าวจัดซื้อจัดจ้าง' && item.group === 3) ||
-      (activeCategory === 'ข่าววิชาการ' && item.group === 4),
+      (activeCategory === 'ข่าวประชาสัมพันธ์' && item.group === 2) ||
+      (activeCategory === 'ข่าวทุนวิจัย/อบรม' && item.group === 3) ||
+      (activeCategory === 'ข่าวจัดซื้อจัดจ้าง' && item.group === 4) ||
+      (activeCategory === 'ข่าววิชาการ' && item.group === 5),
   );
   return (
     <>
       <HeaderHome />
       <ScrollView>
-        <View style={styles.container} className="m-3 mb-0">
+        <View style={styles.container} className="m-2 mb-0">
           <SwiperFlatList
             autoplay
-            autoplayDelay={2}
+            autoplayDelay={3}
             autoplayLoop
-            index={1}
-            height={100}
+            index={2}
+            height={101}
             showPagination>
-            <View>
-              <Image
-                resizeMode="contain"
-                style={styles.image}
-                source={commonImages.slideImg1}
-              />
-            </View>
             <View>
               <Image
                 resizeMode="contain"
@@ -60,25 +54,32 @@ const HomeScreen = () => {
                 source={commonImages.slideImg3}
               />
             </View>
+            <View>
+              <Image
+                resizeMode="contain"
+                style={styles.image}
+                source={commonImages.slideImg4}
+              />
+            </View>
           </SwiperFlatList>
         </View>
 
-        <View className="mt-3 space-y-2">
+        <View className="mt-2 space-y-2">
           <View className="flex flex-row">
-            <View className=" justify-center ml-3">
-              <NewspaperIcon color="#336ac6" size={20} />
+            <View className=" justify-center ml-2">
+              <NewspaperIcon color="#337ac6" size={20} />
             </View>
             <Text
               style={{
-                color: '#336ac6',
+                color: '#337ac6',
                 fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
-                fontSize: 16,
+                fontSize: 17,
               }}
-              className="ml-1 text-3xl font-bold">
-              Latest news
+              className="ml0 text-3xl font-bold">
+              ข่าวล่าสุด
             </Text>
           </View>
-          <View className="pl-4">
+          <View className="pl-3">
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               {Categories.map(cat => {
                 if (cat === activeCategory) {
@@ -86,13 +87,13 @@ const HomeScreen = () => {
                     <TouchableOpacity
                       onPress={() => setActiveCategory(cat)}
                       key={cat}
-                      style={{backgroundColor: '#336ac6'}}
-                      className="p-2.5 px-2 rounded-lg mr-2">
+                      style={{backgroundColor: '#337ac6'}}
+                      className="p-1.5 px-2 rounded-lg mr-2">
                       <Text
                         style={{
                           fontFamily:
                             Platform.OS === 'ios' ? '' : 'Kanit-Medium',
-                          fontSize: 13,
+                          fontSize: 14,
                         }}
                         className="text-white">
                         {cat}
@@ -104,14 +105,14 @@ const HomeScreen = () => {
                     <TouchableOpacity
                       onPress={() => setActiveCategory(cat)}
                       key={cat}
-                      className="bg-stone-200 p-2.5 px-2 rounded-lg mr-2">
+                      className="bg-stone-199 p-2.5 px-2 rounded-lg mr-2">
                       <Text
                         style={{
                           fontFamily:
                             Platform.OS === 'ios' ? '' : 'Kanit-Medium',
-                          fontSize: 13,
+                          fontSize: 14,
                         }}
-                        className="text-slate-500">
+                        className="text-slate-499">
                         {cat}
                       </Text>
                     </TouchableOpacity>
@@ -122,8 +123,8 @@ const HomeScreen = () => {
           </View>
         </View>
 
-        <View className="mt-5 space-y-2">
-          <View className="pl-4">
+        <View className="mt-4 space-y-2">
+          <View className="pl-3">
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               {filteredNews.map((item, index) => {
                 return <NewsCard key={index} news={item} />;
@@ -131,6 +132,29 @@ const HomeScreen = () => {
             </ScrollView>
           </View>
         </View>
+        <View className="flex flex-row mt-5">
+          <View className=" justify-center ml-2">
+            <MapIcon color="#337ac6" size={20} />
+          </View>
+          <Text
+            style={{
+              color: '#337ac6',
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+              fontSize: 17,
+            }}
+            className="ml0 text-3xl font-bold">
+            กิจกรรม
+          </Text>
+        </View>
+        {/* <View className="mt-4 space-y-2 mb-5"> */}
+        {/*   <View className="pl-3"> */}
+        {/*     <ScrollView horizontal showsHorizontalScrollIndicator={false}> */}
+        {/*       {filteredNews.map((item, index) => { */}
+        {/*         return <EventCard key={index} news={item} />; */}
+        {/*       })} */}
+        {/*     </ScrollView> */}
+        {/*   </View> */}
+        {/* </View> */}
       </ScrollView>
     </>
   );
@@ -140,11 +164,11 @@ const {width} = Dimensions.get('window');
 const {height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: 'white'},
+  container: {flex: 2, backgroundColor: 'white'},
   child: {width, justifyContent: 'center'},
-  text: {fontSize: 50, textAlign: 'center'},
+  text: {fontSize: 51, textAlign: 'center'},
   image: {
-    flex: 1,
+    flex: 2,
     width: width,
     height: height,
     resizeMode: 'contain',
