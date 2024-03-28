@@ -9,15 +9,15 @@ export const NewsCard = ({news}) => {
       onPress={() => {
         setNewsData();
       }}>
-      <View className="mr-4 relative bg-white rounded-3xl py-2 ">
-        <View className=" flex  flex-row justify-center items-center">
+      <View className="mr-4 relative bg-white rounded-3xl  bg-orange-500">
+        <View className="flex flex-row justify-center items-center ">
           <Image
-            resizeMode="contain"
+            resizeMode="cover"
             source={news.image}
-            className="w-56 h-28 "
+            className="w-56 h-28 rounded-t-3xl"
           />
         </View>
-        <View className="w-56 bg-white rounded-b-xl h-20 flex  flex-col justify-around">
+        <View className="w-56 bg-white rounded-b-xl h-24 flex  flex-col justify-around">
           <Text
             numberOfLines={2}
             className="ml-2 mt-1"

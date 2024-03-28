@@ -33,6 +33,7 @@ import CourseStack from './CourseStack';
 // import DepartmentStack from './DepartmentStack';
 import DepartmentStacks from './DepartmentStacks';
 import HomeStacks from './HomeStacks';
+import MenuStacks from './MenuStacks';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -161,10 +162,10 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name="Menu"
-        component={MenuScreen}
+        component={MenuStacks}
         options={({navigation}) => ({
           tabBarLabel: 'เมนู',
-          headerShown: true,
+          headerShown: false,
           headerTitle: 'เมนู',
           headerTintColor: '#fff',
           headerStyle: {
