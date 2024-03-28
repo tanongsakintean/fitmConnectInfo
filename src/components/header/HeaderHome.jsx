@@ -19,10 +19,10 @@ export const HeaderHome = () => {
             resizeMode="contain"
             style={{
               width: Platform.OS === 'ios' ? width * 0.3 : 70,
-              height: Platform.OS === 'ios' ? height * 0.1 : 86,
+              height: Platform.OS === 'ios' ? height * 0.091 : 86,
               marginTop: Platform.OS === 'ios' ? 50 : 0,
             }}
-            source={commonImages.logoITNoBg}
+            source={commonImages.logoIT}
           />
         </View>
         <View
