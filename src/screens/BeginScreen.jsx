@@ -24,7 +24,7 @@ const BeginScreen = ({navigation}) => {
         repeat={true}
         muted
         style={{
-          height: 800,
+          height: '100%',
           width: '100%',
         }}
       />
