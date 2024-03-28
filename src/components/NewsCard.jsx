@@ -24,6 +24,7 @@ export const NewsCard = ({news}) => {
             style={{
               fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
               fontSize: 13,
+              color: '#000',
             }}>
             {news.title}
           </Text>
@@ -38,6 +39,7 @@ export const NewsCard = ({news}) => {
                   style={{
                     fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
                     fontSize: 10,
+                    color: '#fff',
                   }}>
                   FITM
                 </Text>
@@ -51,6 +53,7 @@ export const NewsCard = ({news}) => {
                   style={{
                     fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
                     fontSize: 11,
+                    color: '#000',
                   }}>
                   {news.date}
                 </Text>

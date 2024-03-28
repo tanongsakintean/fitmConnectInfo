@@ -112,8 +112,9 @@ const HomeScreen = ({navigation}) => {
                           fontFamily:
                             Platform.OS === 'ios' ? '' : 'Kanit-Medium',
                           fontSize: 14,
+                          // color: '#000',
                         }}
-                        className="text-slate-499">
+                        className="text-slate-500">
                         {cat}
                       </Text>
                     </TouchableOpacity>

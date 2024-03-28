@@ -24,7 +24,7 @@ const MenuStacks = ({navigation}) => {
           name="Menu"
           component={MenuScreen}
           options={({navigation}) => ({
-            headerShown: false,
+            headerShown: true,
             headerTintColor: '#fff',
             tabBarIcon: ({color, size}) => (
               <AcademicCapIcon color={color} size={size} />

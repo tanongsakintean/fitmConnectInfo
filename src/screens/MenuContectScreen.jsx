@@ -59,6 +59,7 @@ const MenuContectScreen = () => {
             style={{
               fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
               fontSize: Platform.OS === 'ios' ? 18 : 14,
+              color: '#000',
             }}>
             ติดต่อสอบถาม
           </Text>
@@ -75,7 +76,7 @@ const MenuContectScreen = () => {
               </View>
               <View className="ml-5">
                 <Text className="text-gray-400">เบอร์โทร</Text>
-                <Text>085-2850606</Text>
+                <Text style={{color: '#000'}}>085-2850606</Text>
               </View>
             </View>
             <TouchableOpacity
@@ -97,7 +98,7 @@ const MenuContectScreen = () => {
               </View>
               <View className="ml-5">
                 <Text className="text-gray-400">E-mail</Text>
-                <Text>it@itm.kmutnb.ac.th</Text>
+                <Text style={{color: '#000'}}>it@itm.kmutnb.ac.th</Text>
               </View>
             </View>
             <TouchableOpacity
@@ -124,7 +125,7 @@ const MenuContectScreen = () => {
               </View>
               <View className="ml-5 h-40 w-full">
                 <Text className="text-gray-400">ที่อยู่</Text>
-                <Text className="flex-1 ">
+                <Text className="flex-1 " style={{color: '#000'}}>
                   ภาควิชาเทคโนโลยีสารสนเทศ {'\n'}
                   คณะเทคโนโลยีและการจัดการอุตสาหกกรรม {'\n'}
                   มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ {'\n'}

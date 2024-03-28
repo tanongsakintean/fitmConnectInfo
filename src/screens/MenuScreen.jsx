@@ -33,7 +33,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className="mt-2">
                 Reg KMUTNB
               </Text>
@@ -58,7 +62,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center  ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className=" mt-2">
                 เอกสารนักศึกษา
               </Text>
@@ -83,7 +91,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className="mt-2">
                 ปฏิทินการศึกษา
               </Text>
@@ -101,12 +113,17 @@ const MenuScreen = ({navigation}) => {
                 width: width - 300,
                 height: 50,
                 overflow: 'visible',
+                color: '#000',
               }}
               source={require('../assets/img/menu/user.png')}
             />
             <View className=" flex flex-row justify-center items-center  ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className=" mt-2">
                 ตรวจสอบผู้จบ
               </Text>
@@ -131,7 +148,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className="mt-2">
                 แจ้งจบการศึกษา
               </Text>
@@ -156,7 +177,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center  ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className=" mt-2">
                 ตรวจสอบผู้จบ
               </Text>
@@ -183,7 +208,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className="mt-2">
                 พิมพ์ใบเสร็จออนไลน์
               </Text>
@@ -206,7 +235,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center  ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className=" mt-2">
                 บริการซอฟต์แวร์
               </Text>
@@ -231,7 +264,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className="mt-2">
                 ห้องเรียน
               </Text>
@@ -254,7 +291,11 @@ const MenuScreen = ({navigation}) => {
             />
             <View className=" flex flex-row justify-center items-center  ">
               <Text
-                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                style={{
+                  fontFamily: 'Kanit-Medium',
+                  fontSize: 12,
+                  color: '#000',
+                }}
                 className=" mt-2">
                 ติดต่อสอบถาม
               </Text>

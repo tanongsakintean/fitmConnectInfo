@@ -67,6 +67,7 @@ const DepartmentScreen = ({navigation}) => {
           style={{
             fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
             fontSize: Platform.OS === 'ios' ? 16 : 14,
+            color: '#000',
             // color: Platform.OS === 'ios' ? '#336ac6' : '#336ac6',
           }}>
           {'\t'}

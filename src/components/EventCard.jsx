@@ -34,6 +34,7 @@ export const EventCard = ({img, title, id, navigation}) => {
             className="  p-2"
             style={{
               fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+              color: '#000',
               fontSize: 13,
             }}>
             {title}
