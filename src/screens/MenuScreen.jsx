@@ -3,6 +3,7 @@ import {
   Dimensions,
   Image,
   Linking,
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -217,14 +218,12 @@ const MenuScreen = ({navigation}) => {
           <TouchableOpacity
             className="bg-white shadow-md rounded-xl p-5  flex justify-center items-center"
             onPress={() => {
-              Linking.openURL(
-                'https://rco.kmutnb.ac.th/?fbclid=IwAR3yGZdTsAoXls8YSmj19QlxbNCyv95H0tOzTAKk0UFh1-bD0obqzBxWCbc',
-              );
+              navigation.navigate('MenuRoom');
             }}>
             <Image
               resizeMode="contain"
               style={{
-                width: width - 300,
+                width: Platform.OS == 'android' ? width - 270 : width - 300,
                 height: 50,
                 overflow: 'visible',
               }}
@@ -234,7 +233,7 @@ const MenuScreen = ({navigation}) => {
               <Text
                 style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
                 className="mt-2">
-                ภาพบรรยากาศ
+                ห้องเรียน
               </Text>
             </View>
           </TouchableOpacity>
