@@ -61,6 +61,39 @@ const HomeStacks = ({navigation}) => {
             ),
           })}
         />
+        {/* <Stack.Screen
+          name="CapitalNew1"
+          component={CourseItiScreen}
+          options={({navigation}) => ({
+            tabBarLabel: 'หลักสูตร',
+            headerShown: true,
+            headerTitle: 'หลักสูตร',
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#336ac6',
+            },
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Bold',
+              fontSize: 15,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              width: width,
+            },
+            tabBarIcon: ({color, size}) => (
+              <AcademicCapIcon color={color} size={size} />
+            ),
+            headerLeft: ({}) => (
+              <TouchableOpacity onPress={() => navigation.navigate('Course')}>
+                <ArrowLeftIcon
+                  style={{marginLeft: -5}}
+                  color="#fff"
+                  size="23"
+                />
+              </TouchableOpacity>
+            ),
+          })}
+        /> */}
       </Stack.Navigator>
     </>
   );

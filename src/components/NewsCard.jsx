@@ -1,13 +1,20 @@
 import React, {useState} from 'react';
-import {View, Text, Image, Platform, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  Platform,
+  TouchableOpacity,
+  Linking,
+} from 'react-native';
 import {ClockIcon} from 'react-native-heroicons/outline';
 
-export const NewsCard = ({news}) => {
-  const [newsData, setNewsData] = useState('');
+export const NewsCard = ({news, id}) => {
+  // const [newsData, setNewsData] = useState('');
   return (
     <TouchableOpacity
       onPress={() => {
-        setNewsData();
+        news.link !== '' ? Linking.openURL(news.link) : null;
       }}>
       <View className="mr-4 relative bg-white rounded-3xl  bg-orange-500">
         <View className="flex flex-row justify-center items-center ">

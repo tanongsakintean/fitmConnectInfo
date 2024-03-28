@@ -128,7 +128,7 @@ const HomeScreen = ({navigation}) => {
           <View className="pl-3">
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               {filteredNews.map((item, index) => {
-                return <NewsCard key={index} news={item} />;
+                return <NewsCard key={index} news={item} id={item.id} />;
               })}
             </ScrollView>
           </View>

@@ -19,7 +19,7 @@ export const HeaderHome = () => {
             resizeMode="contain"
             style={{
               width: Platform.OS === 'ios' ? width * 0.3 : 70,
-              height: Platform.OS === 'ios' ? height * 0.091 : 86,
+              height: Platform.OS === 'ios' ? height * 0.091 : 70,
               marginTop: Platform.OS === 'ios' ? 50 : 0,
             }}
             source={commonImages.logoIT}
