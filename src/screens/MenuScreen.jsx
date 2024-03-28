@@ -8,8 +8,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import MenuContectScreen from './MenuContectScreen';
 
-const MenuScreen = () => {
+const MenuScreen = ({navigation}) => {
   const {width} = Dimensions.get('window');
   return (
     <ScrollView>
@@ -207,6 +208,56 @@ const MenuScreen = () => {
                 style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
                 className=" mt-2">
                 บริการซอฟต์แวร์
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+
+        <View className=" my-5 flex flex-row justify-evenly">
+          <TouchableOpacity
+            className="bg-white shadow-md rounded-xl p-5  flex justify-center items-center"
+            onPress={() => {
+              Linking.openURL(
+                'https://rco.kmutnb.ac.th/?fbclid=IwAR3yGZdTsAoXls8YSmj19QlxbNCyv95H0tOzTAKk0UFh1-bD0obqzBxWCbc',
+              );
+            }}>
+            <Image
+              resizeMode="contain"
+              style={{
+                width: width - 300,
+                height: 50,
+                overflow: 'visible',
+              }}
+              source={require('../assets/img/menu/picture.png')}
+            />
+            <View className=" flex flex-row justify-center items-center ">
+              <Text
+                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                className="mt-2">
+                ภาพบรรยากาศ
+              </Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            className="bg-white shadow-md rounded-xl p-6  flex justify-center items-center"
+            onPress={() => {
+              navigation.navigate('MenuContect');
+            }}>
+            <Image
+              resizeMode="contain"
+              style={{
+                width: width - 300,
+                height: 50,
+                overflow: 'visible',
+              }}
+              source={require('../assets/img/menu/customer-service.png')}
+            />
+            <View className=" flex flex-row justify-center items-center  ">
+              <Text
+                style={{fontFamily: 'Kanit-Medium', fontSize: 12}}
+                className=" mt-2">
+                ติดต่อสอบถาม
               </Text>
             </View>
           </TouchableOpacity>

@@ -125,7 +125,7 @@ const PersonnalScreen = ({navigation}) => {
                     fontSize: 10,
                   }}
                   className="text-black">
-                  Email : khanista.n
+                  Email : peerasak.s
                 </Text>
               </View>
               <View className=" flex flex-row  justify-center">
@@ -165,6 +165,26 @@ const PersonnalScreen = ({navigation}) => {
                   ดร.ประดิษฐ์ พิทักษ์เสถียรกุล
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : pradit.p
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
         </View>
@@ -193,6 +213,26 @@ const PersonnalScreen = ({navigation}) => {
                   ผศ.ดร.วันทนี ประจวบศุภกิจ
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : wanthanee.p
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -218,6 +258,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ผศ.สุปีติ กุลจันทร์
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : supeeti.k
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -248,6 +308,26 @@ const PersonnalScreen = ({navigation}) => {
                   อ.ดร.ศิรินทรา แว่วศรี
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : sirintra.v
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -273,6 +353,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   อ.ดร.กาญจน์ ณ ศรีธะ
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : karn.n
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -313,6 +413,26 @@ const PersonnalScreen = ({navigation}) => {
                   รศ.ดร.อนิราช มิ่งขวัญ
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : anirach.m
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -338,6 +458,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ดร.วัชรชัย คงศิริวัฒนา์
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : watcharachai.k
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -368,6 +508,26 @@ const PersonnalScreen = ({navigation}) => {
                   ผศ.ดร..สุพาภรณ์ ซิ้มเจริญ
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : supaporn.s
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -393,6 +553,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ดร.ศรายุทธ ธเนศสกุลวัฒนา
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : sarayoot.t
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -433,6 +613,26 @@ const PersonnalScreen = ({navigation}) => {
                   รศ.ดร.ยุพิน สรรพคุณ
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : yupin.s
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -458,6 +658,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ผศ.นิมิต ศรีคำทา
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : nimit.s
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -488,6 +708,26 @@ const PersonnalScreen = ({navigation}) => {
                   ผศ.นพเก้า ทองใบ
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : nopphagaw.t
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -513,6 +753,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ผศ.ดร.นัฎฐพันธ์ นาคพงษ์
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : nuttapun.n
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -553,6 +813,26 @@ const PersonnalScreen = ({navigation}) => {
                   ผศ.สมชัย เชียงพงศ์พันธุ์
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : somchai.c
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -578,6 +858,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ผศ.อรบุษป์ วุฒิกมลชัย
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : oraboot.w
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -608,6 +908,26 @@ const PersonnalScreen = ({navigation}) => {
                   ผศ.นพดล บูรณ์กุศล
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : noppadon.b
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -633,6 +953,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ผศ.นิติการ นาคเจือทอง
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : nitigan.n
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -661,6 +1001,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3 ">
                   ผศ.ดร.บีสุดา ดาวเรือง
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : beesuda.d
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -705,6 +1065,26 @@ const PersonnalScreen = ({navigation}) => {
                   ผศ.ดร.พาฝัน ดวงไพศาล
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : pafan.d
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -730,6 +1110,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3">
                   ผศ.สิวาลัย จินเจือ
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : siwalai.s
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -768,6 +1168,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3 ">
                   คุณไกรมิตร พงษ์นิยะกูล
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : kaimit.p
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -812,6 +1232,26 @@ const PersonnalScreen = ({navigation}) => {
                   คุณกฤษณ์ เผือกงาม
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : krit.p
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -854,6 +1294,26 @@ const PersonnalScreen = ({navigation}) => {
                   คุณลัดดา ตั้งเกียรติศิริ
                 </Text>
               </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : ladda.t
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
+                </Text>
+              </View>
             </View>
           </View>
 
@@ -878,6 +1338,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3 ">
                   คุณอุไรวรรณ วัตรยิ่ง
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : uraiwan.w
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>
@@ -916,6 +1396,26 @@ const PersonnalScreen = ({navigation}) => {
                   }}
                   className="text-black my-3 ">
                   คุณวิวัช รุ่งสว่าง
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center ">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  Email : wivach.r
+                </Text>
+              </View>
+              <View className=" flex flex-row  justify-center">
+                <Text
+                  style={{
+                    fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+                    fontSize: 10,
+                  }}
+                  className="text-black">
+                  @itm.kmutnb.ac.th
                 </Text>
               </View>
             </View>

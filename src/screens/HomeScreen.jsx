@@ -24,10 +24,10 @@ const HomeScreen = ({navigation}) => {
   const filteredNews = FeedNews.filter(
     item =>
       activeCategory === 'ทั้งหมด' ||
-      (activeCategory === 'ข่าวประชาสัมพันธ์' && item.group === 2) ||
-      (activeCategory === 'ข่าวทุนวิจัย/อบรม' && item.group === 3) ||
-      (activeCategory === 'ข่าวจัดซื้อจัดจ้าง' && item.group === 4) ||
-      (activeCategory === 'ข่าววิชาการ' && item.group === 5),
+      (activeCategory === 'ข่าวประชาสัมพันธ์' && item.group === 1) ||
+      (activeCategory === 'ข่าวทุนวิจัย/อบรม' && item.group === 2) ||
+      (activeCategory === 'ข่าวจัดซื้อจัดจ้าง' && item.group === 3) ||
+      (activeCategory === 'ข่าววิชาการ' && item.group === 4),
   );
   return (
     <>
@@ -43,21 +43,21 @@ const HomeScreen = ({navigation}) => {
             showPagination>
             <View>
               <Image
-                resizeMode="contain"
+                resizeMode="cover"
                 style={styles.image}
                 source={commonImages.slideImg1}
               />
             </View>
             <View>
               <Image
-                resizeMode="contain"
+                resizeMode="cover"
                 style={styles.image}
                 source={commonImages.slideImg2}
               />
             </View>
             <View>
               <Image
-                resizeMode="contain"
+                resizeMode="cover"
                 style={styles.image}
                 source={commonImages.slideImg3}
               />
