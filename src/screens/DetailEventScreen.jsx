@@ -63,6 +63,7 @@ const DetailEventScreen = ({route, navigation}) => {
             style={{
               fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
               fontSize: 13,
+              color: '#000',
             }}>
             {item.title}
           </Text>
@@ -72,6 +73,7 @@ const DetailEventScreen = ({route, navigation}) => {
             style={{
               fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
               fontSize: 13,
+              color: '#000',
             }}>
             {item.message}
           </Text>

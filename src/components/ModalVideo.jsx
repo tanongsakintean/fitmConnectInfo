@@ -41,10 +41,11 @@ export const ModalVideo = ({modalVisible, setModalVisible}) => {
           <View className="w-85">
             <View className="m-3">
               <Video
-                source={require('../assets/video/prajinburi.mp4')} // Can be a URL or a local file.
+                source={require('../assets/video/it.mp4')} // Can be a URL or a local file.
                 ref={ref => {
                   this.player = ref;
                 }}
+                resizeMode={'contain'}
                 onBuffer={this.onBuffer}
                 onError={this.videoError}
                 style={{
