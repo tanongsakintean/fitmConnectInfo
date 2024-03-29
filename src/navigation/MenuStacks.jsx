@@ -2,7 +2,11 @@ import React from 'react';
 // import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Dimensions, Platform, TouchableOpacity} from 'react-native';
-import {AcademicCapIcon, ArrowLeftIcon} from 'react-native-heroicons/outline';
+import {
+  AcademicCapIcon,
+  Bars3Icon,
+  ArrowLeftIcon,
+} from 'react-native-heroicons/outline';
 import HomeScreen from '../screens/HomeScreen';
 import DetailEventScreen from '../screens/DetailEventScreen';
 import MenuScreen from '../screens/MenuScreen';
@@ -24,12 +28,33 @@ const MenuStacks = ({navigation}) => {
           name="Menu"
           component={MenuScreen}
           options={({navigation}) => ({
+            tabBarLabel: 'เมนู',
             headerShown: true,
-            headerTintColor: '#fff',
-            tabBarIcon: ({color, size}) => (
-              <AcademicCapIcon color={color} size={size} />
-            ),
+            headerTitle: 'เมนู',
             headerTitleAlign: 'center',
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#336ac6',
+            },
+            headerTitleStyle: {
+              fontFamily: Platform.OS === 'ios' ? '' : 'Kanit-Medium',
+              fontSize: 15,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              width: 260,
+            },
+            tabBarIcon: ({color, size}) => (
+              <Bars3Icon color={color} size={size} />
+            ),
+            headerLeft: () => (
+              <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                <ArrowLeftIcon
+                  style={{marginLeft: 10}}
+                  color="#fff"
+                  size="23"
+                />
+              </TouchableOpacity>
+            ),
           })}
         />
         <Stack.Screen

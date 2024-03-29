@@ -135,7 +135,7 @@ const MenuScreen = ({navigation}) => {
           <TouchableOpacity
             className="bg-white shadow-md rounded-xl p-5  flex justify-center items-center"
             onPress={() => {
-              Linking.openURL('https://acdserv.kmutnb.ac.th/academic-calendar');
+              Linking.openURL('http://services.regis.kmutnb.ac.th/');
             }}>
             <Image
               resizeMode="contain"
@@ -183,7 +183,7 @@ const MenuScreen = ({navigation}) => {
                   color: '#000',
                 }}
                 className=" mt-2">
-                ตรวจสอบผู้จบ
+                ขอเอกสารศึกษา
               </Text>
             </View>
           </TouchableOpacity>
