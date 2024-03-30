@@ -50,7 +50,7 @@ const MenuContectScreen = () => {
           <Image
             className="rounded-full"
             style={{width: 100, height: 100}}
-            source={require('../assets/img/IT_logo.jpeg')}
+            source={require('../assets/img/IT_logo_noname.jpeg')}
           />
         </View>
         <View className="mt-3 items-center">
